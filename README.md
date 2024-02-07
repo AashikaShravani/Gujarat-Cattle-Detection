@@ -9,8 +9,10 @@ Object detection techniques are utilized as part of the solution. Mobile Net-SSD
 The Detection of cattle is recorded and generated as a bar chart and if the accuracy of cattle detection is above 95% an alert mechanism is triggered. The authorities are notified about the presence of stray cattle through WhatsApp messages
 
 # Architecture 
-<p img="https://github.com/AashikaShravani/Gujarat-Cattle-Detection/assets/140937457/045f3621-e6bd-401a-9f3e-1eb6d69e7902)
-" ></p>
+<p align="Center">
+  <img src="https://github.com/AashikaShravani/Gujarat-Cattle-Detection/assets/140937457/e21b2cbf-2b8b-45fb-8e8a-9547755d74c0
+" >
+</p>
 
 
 
