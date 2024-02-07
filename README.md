@@ -10,8 +10,7 @@ The Detection of cattle is recorded and generated as a bar chart and if the accu
 
 # Architecture 
 <p align="Center">
-  <img src="https://github.com/AashikaShravani/Gujarat-Cattle-Detection/assets/140937457/e21b2cbf-2b8b-45fb-8e8a-9547755d74c0
-" >
+  <img src="https://github.com/AashikaShravani/Gujarat-Cattle-Detection/assets/140937457/e21b2cbf-2b8b-45fb-8e8a-9547755d74c0" >
 </p>
 
 
