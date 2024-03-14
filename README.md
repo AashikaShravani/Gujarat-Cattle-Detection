@@ -1,4 +1,4 @@
-# Cattle Management System
+![image](https://github.com/AashikaShravani/Gujarat-Cattle-Detection/assets/140937457/52e21e6e-8b01-49e8-bce5-bb465f6d7ac0)# Cattle Management System
 Stray Cattle Monitoring 
 # Problem 
 The issue of stray cattle roaming on the busy roads is very severe in Gujarat this  pose a significant hazard to public safety, causing traffic disruptions and potential accidents.
@@ -18,4 +18,18 @@ The Detection of cattle is recorded and generated as a bar chart and if the accu
   <img src="https://github.com/AashikaShravani/Gujarat-Cattle-Detection/assets/140937457/75f30c66-f09e-4bc4-806e-e6749ee762f8" >
 </p>
 
+# Output 
+1. Cattle Detection and Accuracy Rate with Bar Chart
+<p align="Center">
+  <video src="https://github.com/AashikaShravani/Gujarat-Cattle-Detection/assets/140937457/dc86371d-8624-47cb-ac27-9e35ea54c86a">
+</p>
 
+2. What's App Alert
+<p align="Center">
+  <img src="https://github.com/AashikaShravani/Gujarat-Cattle-Detection/assets/140937457/00b314d8-c349-423f-b188-78348d493f23">
+</p>
+
+3. QR Code
+<p align="Center">
+  <img src="https://github.com/AashikaShravani/Gujarat-Cattle-Detection/assets/140937457/da56a8b3-f51f-4eac-bc67-42fdf1b94c18">
+</p>
