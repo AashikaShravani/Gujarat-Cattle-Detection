@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: black; /* Set the background color to black */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .video-container {
+            width: 50%;
+        }
+
+        .chart-container {
+            width: 50%;
+            padding: 20px; /* Add padding for spacing */
+        }
+
+        #video-feed {
+            max-width: 100%; /* Limit video width to its container */
+            height: auto; /* Automatically adjust video height */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Cattle Detection</h1>
+    <div class="container">
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" id="video-feed" alt="Video Feed">
+        </div>
+        <div class="chart-container">
+            <canvas id="object-chart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Initialize the chart with initial data
+        const ctx = document.getElementById('object-chart').getContext('2d');
+        let chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Accuracy (%)',
+                    data: [],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        min: 0,
+                        max: 100
+                    }
+                }
+            }
+        });
+
+        // Function to update the chart data
+        function updateChart() {
+            fetch('/chart_data')
+                .then(response => response.json())
+                .then(data => {
+                    chart.data.labels = data.labels;
+                    chart.data.datasets[0].data = data.accuracy;
+                    chart.update();
+                });
+        }
+
+        // Periodically update the chart data (adjust the interval as needed)
+        setInterval(updateChart, 1000); // Update every second
+    </script>
+</body>
+</html>
