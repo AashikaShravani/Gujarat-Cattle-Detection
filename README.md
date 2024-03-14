@@ -1,4 +1,4 @@
-# Cattle-Detection
+# Cattle Management System
 Stray Cattle Monitoring 
 # Problem 
 The issue of stray cattle roaming on the busy roads is very severe in Gujarat this  pose a significant hazard to public safety, causing traffic disruptions and potential accidents.
